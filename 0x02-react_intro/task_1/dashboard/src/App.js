@@ -1,4 +1,3 @@
-import './App.css';
 import Holberton from './components/Holberton';
 
 function App() {
