@@ -1,3 +1,60 @@
 {
-    "presets": ["@babel/preset-env", "@babel/preset-react"]
-}
+    "name": "dashboard",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": "http://maleksal.github.io/holbertonschool-web_react",
+    "dependencies": {
+      "@testing-library/jest-dom": "^5.15.0",
+      "@testing-library/react": "^11.2.7",
+      "@testing-library/user-event": "^12.8.3",
+      "enzyme": "^3.11.0",
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2",
+      "react-scripts": "4.0.3",
+      "web-vitals": "^1.1.2"
+    },
+    "scripts": {
+      "start": "webpack serve --mode development --config config/webpack.config.js",
+      "test": "jest",
+      "build": "react-scripts build",
+      "eject": "react-scripts eject",
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build"
+    },
+    "jest": {
+        "verbose": true,
+        "clearMocks": true,
+        "setupFilesAfterEnv": [
+          "<rootDir>/config/setupTests.js"
+        ],
+        "transform": {
+          "^.+\\.js$": "babel-jest"
+        },
+        "moduleNameMapper": {
+          "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+          "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js"
+        }
+      },
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest"
+      ]
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    "devDependencies": {
+      "gh-pages": "^3.2.3"
+    }
+  }
+  
