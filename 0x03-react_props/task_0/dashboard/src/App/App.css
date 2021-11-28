@@ -1,0 +1,12 @@
+
+.App-body {
+  margin:  50px;
+  min-height: 50vh;
+  font-size: 20;
+}
+
+
+
+.App-header h1 {
+    padding-top: 85px;
+  }

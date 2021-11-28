@@ -1,0 +1,14 @@
+.App-logo {
+    height: 30vmin;
+}
+
+.App-header {
+    align-items: top;
+    font-size: 20px;
+    color: #F2003A;
+    display: flex;
+    border-bottom: 3px solid #F2003A;
+    margin-bottom:  50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; 
+}

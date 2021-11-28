@@ -1,0 +1,19 @@
+.App-body {
+    margin:  50px;
+    min-height: 50vh;
+    font-weight: bold;  
+    font-family: 'Poppins', sans-serif;
+    font-size: 20;
+  }
+  
+  .App-login {
+    margin: 50px;
+  }
+  
+  label {
+    padding: 1rem;
+  }
+  
+  button {
+    margin: 1rem;
+  }
