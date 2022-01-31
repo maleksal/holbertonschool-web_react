@@ -1,5 +1,7 @@
 const path = require('path');
 
+const bypass = [["html-webpack-plugin", "clean-webpack-plugin"], ["inline-source-map"], ["all"]]
+
 module.exports = {
 entry: {
 header: './modules/header/header.js',
