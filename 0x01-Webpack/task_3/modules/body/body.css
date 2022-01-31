@@ -1,0 +1,7 @@
+body {
+color: red;
+}
+p#count {
+display: inline;
+font-weight: bold;
+}
