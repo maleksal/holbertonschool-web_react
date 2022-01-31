@@ -1,5 +1,7 @@
 const path = require('path');
 
+const bypass = ["file-loader"];
+
 module.exports = {
 entry: './js/dashboard_main.js',
 output: {
